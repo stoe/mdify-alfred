@@ -16,14 +16,9 @@ notifications:
     on_success: change
     on_failure: always
 
-env:
-  global:
-    secure: DphEft0byVZ35eO2zBf0m2z+gJ5sfnnmqSHBYTJL3W6Sxe/psAtK11m3SKFmkMNUshNdk20Uo9lhMbs2utx7sncOYlKFmGfkk9jOA6eiH4RomXuoEF7fXdN3kxfs2jTHhtfVESAGwbRCEyhfvaCYnzNHI3E/WofCMl907DrdP2U+MA8Ej6lM0UWvgVcBg9cR5Nu+h63gM0+t5yX7RZ3dJF/zCRjJN9/8aULLUvl/3nU9GW50FnrLqkRomtQv9W3umw/BDZ9XX8Ymef4fyjK0sbYu48BrkcmHYV+qt5mNPaynkoa3QgVQ9LgWbwsqArxvPiUxVjnAbW+daW6B/dbzSWHvUdcRDzhHQ1pqoJwyax36oXP3JdkXFgs8B5cKhmaXTFH7NjAGAt3nqRb6Jzbtho+bg8z3tPenFJbCftXChysyoR/Srip6L7JP9uHKaqY0PHPTB0ocWlO1Kzn5J7p98z/6e2Y9NdS1sAfjLctlg0SezJlYscm9l4Pzju25rCUva3VnHEGPcJ936WYsxViFff3BbgUPOmjU3MNpVo9iM1UnrN+XD8S0uUDYQBZwg9RxINC/aEqihrJXlej5XO2YETx+5Rls50ZGiSuEpLtevISnbpBFgmeoHVaC/jFQuV9ax4DFmW0VzdYq9LpDhG5byGOYupyqrWx9I1Bm3hU7jws=
-
 cache:
   directories:
     - node_modules
 
 install: 'npm install'
-before_script: 'snyk auth $SNYK_TOKEN'
 script: 'npm test'
