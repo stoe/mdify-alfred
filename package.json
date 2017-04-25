@@ -32,11 +32,10 @@
     "preuninstall": "alfy-cleanup"
   },
   "files": [
-    "doctools.js",
     "icon.png",
+    "index.js",
     "info.plist",
     "license",
-    "mdify.js",
     "readme.md"
   ],
   "dependencies": {
