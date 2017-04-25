@@ -1,6 +1,6 @@
 {
   "name": "mdify-alfred",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Alfred workflow to convert DOCX to markdown",
   "keywords": [
     "alfred",
