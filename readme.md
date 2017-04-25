@@ -15,7 +15,7 @@ $ npm install --global mdify-alfred
 
 ## Usage
 
-In Alfred, type `doctools`, search for the file to convert and hit <kbd>Enter</kbd>.
+In Alfred, type `mdify`, search for the file to convert and hit <kbd>Enter</kbd>.
 
 
 ## Related
