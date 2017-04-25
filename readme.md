@@ -18,5 +18,9 @@ $ npm install --global mdify-alfred
 In Alfred, type `doctools`, search for the file to convert and hit <kbd>Enter</kbd>.
 
 
+## Related
+- [https://github.com/stoe/mdify-node](https://github.com/stoe/mdify-node)
+
+
 ## License [![license](https://img.shields.io/github/license/stoe/mdify-alfred.svg)](https://github.com/stoe/mdify-alfred/blob/master/license)
 MIT © [Stefan Stölzle](https://github.com/stoe)
