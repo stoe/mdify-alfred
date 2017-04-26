@@ -42,7 +42,7 @@
     "alfred-notifier": "^0.2.0",
     "alfy": "^0.6.0",
     "execa": "^0.6.3",
-    "mdify-node": "^1.0.2",
+    "mdify-node": "^1.1.0",
     "opn": "^4.0.2",
     "ora": "^1.2.0"
   },
