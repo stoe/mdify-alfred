@@ -1,6 +1,7 @@
 language: node_js
 node_js:
   - 'node'
+  - '8'
   - '7'
   - '6'
 
@@ -8,6 +9,7 @@ matrix:
   fast_finish: true
   allow_failures:
     - node_js: 'node'
+    - node_js: '8'
 
 addons:
   apt:
@@ -18,14 +20,6 @@ notifications:
   email:
     on_success: never
     on_failure: change
-  slack:
-    template:
-      - "%{repository_slug}@%{branch} (%{commit}): %{result} in %{duration}"
-      - "%{build_url}"
-    rooms:
-      secure: vAvbsr6wFLkvk++43OASYJhdEKqh/GrvSOQyALHyXALHmOP6fPwAUhUDPeuxv6IZkF+PBGJwNcLejfeIHiPdEx5Xt96DXXKwc70Ph6j2OxKXyr6YxIyV28zGkKPENEBKUjr1qKfpMXi+01Myl5urRK2efuQQdYcV/EPOfMVjjTUhRHuH32FWeHr1oktZ26Ad5g6Cip6A2RGu68ESAwcJZKg1SeocT6uUVXkjIP+4ENyp3tBBHhYeCtU2qJXYKhWY7GfX5aDUKl9+PDhFbyz+xE4LLygSWD81G5QHAMkDQTBE1WkrTbQUPfOFgKZ2T0l3Eohn9NwOL8ymIhSEcZx6omqbaczSeOaHGxgVDiQF3p1xl5LsFF+jTheihsuoJdBJ4YherQvVYOmnVWam0JwGE2CAPaCeIal8GXRnCl8esS3N/QY25TuD9x7SHg9GSKMNyyUg7SjNDf4EHlPa41ac+qiaqfmUMYYGvJxrUyFRF94v119USfz8i70k3OwSTrFIGGKZ+NwCrafHz+k/TCef9dgRIrQovYbyJpcrdQGzQ0YTwBjGw9NnBBHskXK/WTQxd26AlzxFhqu67QyHWrM6RNaIfeL51zEuZReA8BihIoSyJ1aF3HENjLqv+xjXlNAs0juYAekZ0PGC4yfDzorKTsPcW3rMnDQl1BnrZDaJgLc=
-    on_success: change
-    on_failure: always
 
 cache:
   directories:
