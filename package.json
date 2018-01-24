@@ -30,7 +30,9 @@
   "scripts": {
     "test": "xo && ava -v",
     "postinstall": "script/setup && alfy-init",
-    "preuninstall": "alfy-cleanup"
+    "preuninstall": "alfy-cleanup",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "files": [
     "icon.png",
@@ -45,7 +47,8 @@
     "execa": "^0.6.3",
     "mdify-node": "^1.1.2",
     "opn": "^4.0.2",
-    "ora": "^1.2.0"
+    "ora": "^1.2.0",
+    "snyk": "^1.69.3"
   },
   "devDependencies": {
     "alfy-test": "^0.3.0",
