@@ -19,6 +19,6 @@ const mdify = new MDify({
   destination,
   open: false
 });
-mdify.makeHTML().then(html => {
+mdify.makeHTML().then(html => { // eslint-disable-line promise/prefer-await-to-then
   mdify.makeMD(html);
 });
