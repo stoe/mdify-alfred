@@ -24,8 +24,8 @@
     "url": "https://github.com/stoelzle/mdify-alfred/issues"
   },
   "engines": {
-    "node": ">=6",
-    "npm": ">=3"
+    "node": ">=8",
+    "npm": ">=5"
   },
   "scripts": {
     "test": "xo && ava -v",
