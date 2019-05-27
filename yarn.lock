@@ -138,11 +138,12 @@ ajv@^6.0.1, ajv@^6.5.0:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.1"
 
-alfred-link@^0.2.0:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/alfred-link/-/alfred-link-0.2.1.tgz#462cc1fccd2deddc2676ab19c57e584b8822710a"
+alfred-link@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/alfred-link/-/alfred-link-0.3.0.tgz#d7afce495c04d85c6293c9a5abefbe7506ef8dd5"
   dependencies:
     del "^2.2.2"
+    make-dir "^1.3.0"
     path-exists "^3.0.0"
     pify "^2.3.0"
     plist "^2.0.1"
@@ -175,22 +176,21 @@ alfy-test@^0.3.0:
     run-node "^0.1.1"
     tempfile "^1.1.1"
 
-alfy@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/alfy/-/alfy-0.7.0.tgz#2d41f0315d9594093fcdca70ed8458009554592e"
+alfy@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/alfy/-/alfy-0.8.0.tgz#e1fff17736abfea5150cbbf1964483f861bd2e4c"
   dependencies:
-    alfred-link "^0.2.0"
+    alfred-link "^0.3.0"
     alfred-notifier "^0.2.0"
     cache-conf "^0.6.0"
-    clean-stack "^1.0.0"
-    conf "^1.1.2"
+    clean-stack "^2.0.0"
+    conf "^2.0.0"
     dot-prop "^4.0.0"
-    execa "^0.8.0"
+    execa "^1.0.0"
     got "^8.0.1"
-    hook-std "^0.4.0"
+    hook-std "^1.1.0"
     loud-rejection "^1.6.0"
-    npm-run-path "^2.0.2"
-    read-pkg-up "^3.0.0"
+    read-pkg-up "^4.0.0"
 
 ansi-align@^2.0.0:
   version "2.0.0"
@@ -1059,9 +1059,13 @@ clean-regexp@^1.0.0:
   dependencies:
     escape-string-regexp "^1.0.5"
 
-clean-stack@^1.0.0, clean-stack@^1.1.1:
+clean-stack@^1.1.1:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/clean-stack/-/clean-stack-1.3.0.tgz#9e821501ae979986c46b1d66d2d432db2fd4ae31"
+
+clean-stack@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/clean-stack/-/clean-stack-2.1.0.tgz#9e7fec7f3f8340a2ab4f127c80273085e8fbbdd0"
 
 clean-yaml-object@^0.1.0:
   version "0.1.0"
@@ -1228,9 +1232,19 @@ conf@^0.12.0:
     mkdirp "^0.5.1"
     pkg-up "^1.0.0"
 
-conf@^1.1.2, conf@^1.2.0:
+conf@^1.2.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/conf/-/conf-1.4.0.tgz#1ea66c9d7a9b601674a5bb9d2b8dc3c726625e67"
+  dependencies:
+    dot-prop "^4.1.0"
+    env-paths "^1.0.0"
+    make-dir "^1.0.0"
+    pkg-up "^2.0.0"
+    write-file-atomic "^2.3.0"
+
+conf@^2.0.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/conf/-/conf-2.2.0.tgz#ee282efafc1450b61e205372041ad7d866802d9a"
   dependencies:
     dot-prop "^4.1.0"
     env-paths "^1.0.0"
@@ -2129,6 +2143,12 @@ find-up@^2.0.0, find-up@^2.1.0:
   dependencies:
     locate-path "^2.0.0"
 
+find-up@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/find-up/-/find-up-3.0.0.tgz#49169f1d7993430646da61ecc5ae355c21c97b73"
+  dependencies:
+    locate-path "^3.0.0"
+
 flat-cache@^1.2.1:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/flat-cache/-/flat-cache-1.3.0.tgz#d3030b32b38154f4e3b7e9c709f490f7ef97c481"
@@ -2526,9 +2546,9 @@ home-or-tmp@^2.0.0:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.1"
 
-hook-std@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/hook-std/-/hook-std-0.4.0.tgz#fa8b2f84d358763137cb7d17e3308b28714bd174"
+hook-std@^1.1.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/hook-std/-/hook-std-1.2.0.tgz#b37d533ea5f40068fe368cb4d022ee1992588c27"
 
 hosted-git-info@^2.1.4:
   version "2.7.1"
@@ -3283,6 +3303,13 @@ locate-path@^2.0.0:
     p-locate "^2.0.0"
     path-exists "^3.0.0"
 
+locate-path@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/locate-path/-/locate-path-3.0.0.tgz#dbec3b3ab759758071b58fe59fc41871af21400e"
+  dependencies:
+    p-locate "^3.0.0"
+    path-exists "^3.0.0"
+
 lodash.assign@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/lodash.assign/-/lodash.assign-4.2.0.tgz#0d99f3ccd7a6d261d19bdaeb9245005d285808e7"
@@ -3405,7 +3432,7 @@ macos-release@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/macos-release/-/macos-release-1.1.0.tgz#831945e29365b470aa8724b0ab36c8f8959d10fb"
 
-make-dir@^1.0.0:
+make-dir@^1.0.0, make-dir@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/make-dir/-/make-dir-1.3.0.tgz#79c1033b80515bd6d24ec9933e860ca75ee27f0c"
   dependencies:
@@ -3754,7 +3781,7 @@ npm-run-path@^1.0.0:
   dependencies:
     path-key "^1.0.0"
 
-npm-run-path@^2.0.0, npm-run-path@^2.0.2:
+npm-run-path@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/npm-run-path/-/npm-run-path-2.0.2.tgz#35a9232dfa35d7067b4cb2ddf2357b1871536c5f"
   dependencies:
@@ -3935,11 +3962,23 @@ p-limit@^1.1.0:
   dependencies:
     p-try "^1.0.0"
 
+p-limit@^2.0.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/p-limit/-/p-limit-2.2.0.tgz#417c9941e6027a9abcba5092dd2904e255b5fbc2"
+  dependencies:
+    p-try "^2.0.0"
+
 p-locate@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/p-locate/-/p-locate-2.0.0.tgz#20a0103b222a70c8fd39cc2e580680f3dde5ec43"
   dependencies:
     p-limit "^1.1.0"
+
+p-locate@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/p-locate/-/p-locate-3.0.0.tgz#322d69a05c0264b25997d9f40cd8a891ab0064a4"
+  dependencies:
+    p-limit "^2.0.0"
 
 p-timeout@^2.0.1:
   version "2.0.1"
@@ -3950,6 +3989,10 @@ p-timeout@^2.0.1:
 p-try@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-1.0.0.tgz#cbc79cdbaf8fd4228e13f621f2b1a237c1b207b3"
+
+p-try@^2.0.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
 
 pac-proxy-agent@^2.0.1:
   version "2.0.2"
@@ -4358,6 +4401,13 @@ read-pkg-up@^3.0.0:
   resolved "https://registry.yarnpkg.com/read-pkg-up/-/read-pkg-up-3.0.0.tgz#3ed496685dba0f8fe118d0691dc51f4a1ff96f07"
   dependencies:
     find-up "^2.0.0"
+    read-pkg "^3.0.0"
+
+read-pkg-up@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/read-pkg-up/-/read-pkg-up-4.0.0.tgz#1b221c6088ba7799601c808f91161c66e58f8978"
+  dependencies:
+    find-up "^3.0.0"
     read-pkg "^3.0.0"
 
 read-pkg@^1.0.0:

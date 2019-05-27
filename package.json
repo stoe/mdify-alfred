@@ -43,7 +43,7 @@
   ],
   "dependencies": {
     "alfred-notifier": "^0.2.3",
-    "alfy": "^0.7.0",
+    "alfy": "^0.8.0",
     "execa": "^1.0.0",
     "mdify-node": "^1.1.4",
     "opn": "^6.0.0",
