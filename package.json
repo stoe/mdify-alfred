@@ -58,7 +58,7 @@
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
-    "xo": "^0.21.1"
+    "xo": "^0.24.0"
   },
   "resolutions": {
     "eslint-scope": "3.7.1",
