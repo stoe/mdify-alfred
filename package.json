@@ -53,7 +53,7 @@
   "devDependencies": {
     "alfy-test": "^0.3.0",
     "ava": "^2.0.0",
-    "eslint": "^5.1.0",
+    "eslint": "^6.1.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-promise": "^4.1.1",
